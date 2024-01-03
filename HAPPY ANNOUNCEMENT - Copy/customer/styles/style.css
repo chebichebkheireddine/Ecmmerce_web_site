@@ -1,0 +1,451 @@
+.box .box-footer {
+    background-color: #FFE194;
+    margin: 30px -20px 20px;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+/*
+PHOTO Aconte
+
+*/.logot{
+    width: 46px;
+    height: 46px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+    
+}
+center {
+
+    margin-top: 15px;
+
+}
+.coo{
+    
+    width: 250px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+    
+}
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-variant: unset;
+    font-size: larger;
+    line-height: 1;
+    text-rendering: optimizeSpeed;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+.panel-default>.panel-heading {
+    color: #000000;
+    background-color: #FFE194;
+    border-color: #ddd;
+}
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fefefe;
+    background-color: #FFE194;
+    border-color: #FFE194;
+}
+header{
+    padding-top: 100px;
+}
+.btn-primary:hover{
+    background-color: #FFE194
+}
+.modal-header  ,.open , .close {
+    background-color:#FFB319;
+    color:white !important ;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .modal-footer {
+    background-color:#FFB319;
+    color: white;
+  }
+
+  body{
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #180A0A;
+    background: #f9f9f9;
+    overflow-x: hidden;
+}
+
+
+/* Header Styles */
+
+.navbar{
+    background: #FFB319;
+}
+.navbar-collapse .right{
+    float: right;
+}
+.navbar-brand{
+    float: left;
+    padding: 15px 15px;
+    font-size: 15px;
+    line-height: 20px;
+    height: 70px;
+}
+.navbar-brand:hover,
+.navbar-brand:focus{
+    text-decoration: none;
+}
+.navbar ul.nav > li>a:hover,
+.navbar ul.nav > li>a:focus{
+    background-color: #FFE194;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #000000;
+    background-color: #E8F6EF;
+}
+.navbar ul.nav > li > a{
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    width: 150px;
+    margin: 3px 1px;
+    border-radius: 20px;
+    color: #fefefe;
+    background-color:#FFB319 ;
+
+}
+.navbar ul.nav > li > a:hover{
+    color: #000000;
+}
+
+.padding-nav{
+    padding-top: 10px;
+}
+.btn-primary{
+    color: #fefefe;
+    background: #FFB319;
+    border-color: #FFB319;
+   
+   
+    border-radius: 20px;
+}
+#search .navbar-form{
+    float: right;
+}
+#search{
+    clear: both;
+    border-top: solid 1px #FFB319;
+    text-align: right;
+}
+#search .navbar-form .input-group{
+    display: table;
+}
+#search .navbar-form .input-group .form-control{
+    width: 100%;
+}
+#slider{
+    margin-bottom: 40px;
+}
+
+/* advantages Styles */
+
+#advantages{
+    text-align: center;
+}
+.box{
+    background: #FFB319;
+    margin: 0 0 30px;
+    border: solid 1px #FFE194;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+}
+#advantages .box .icon{
+    position: absolute;
+    font-size: 120px;
+    width: 100%;
+    text-align: center;
+    top: -20px;
+    left: 0px;
+    height: 100%;
+    float: left;
+    color: #dadada;
+    box-sizing: border-box;
+    z-index: 1;
+}
+#advantages .box h3{
+    position: relative;
+    margin: 0 0 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    z-index: 2;
+}
+#advantages .box h3 a{
+    color: #000000;
+}
+#advantages .box h3 a:hover{
+    text-decoration: none;
+}
+#advantages .box p{
+    position: relative;
+    z-index: 2;
+    color: #324333;
+}
+
+/* Latest Annonsess Styles */
+
+#hot h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: #0F0E0E;
+    text-align: center;
+    text-transform: uppercase;
+}
+#content{
+   padding-left: 25px; 
+}
+.single{
+    width: 290px;
+}
+@media(max-width:768px){
+    .single{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+#content .Annonses{
+    background: #f9f9f9;
+    border: solid 1px  #222222;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+#content .Annonses .text{
+    padding: 10px 10px 0px;
+}
+#content .Annonses .text p.price{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+#content .Annonses .text .button{
+    text-align: center;
+    clear: both;
+}
+#content .Annonses .text .button .btn{
+    margin-bottom: 10px;
+}
+#content .Annonses .text h3{
+    text-align: center;
+    font-size: 20px;
+}
+#content .Annonses .text h3 a{
+    color: #0F0E0E;
+}
+
+/*  Breadcrumb Styles  */
+
+.breadcrumb{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    background:#FFE194;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+}
+.breadcrumb> li + li:before{
+    content: ">\00a0";
+    color: #fefefe;
+}
+@media(max-width:991px){
+    .breadcrumb{
+        padding: 8px 0px;
+        text-align: center;
+    }
+}
+
+/*  Annonsess Categories & Categories Styles */
+#content .panel.sidebar-menu{
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+    shape-image-threshold: unset;
+    border-radius: 20px;
+}
+#content .panel.sidebar-menu ul.nav.category-menu{
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+#content .panel.sidebar-menu ul.nav.category-menu li a{
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+#content .panel.sidebar-menu h3{
+    padding: 5px 0px;
+    margin: 0px;
+    border-radius: 20px;
+}
+/*  my acount  */
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #FFB319;
+}
+
+/*  Shop Annonsess Tyles  */
+
+@media(max-width: 768px){
+    .center-responsive{
+        width: 70%;
+        margin: 0px auto;
+    }
+}
+@media(max-width: 550px){
+    .center-responsive{
+        width: 95%;
+        margin: 0px auto;
+    }
+}
+
+/*  Details.php Styles */
+
+
+#content #AnnonsesMain{
+    margin-bottom: 30px;
+}
+#content #AnnonsesMain .price{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+#content #mainImage{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .7);
+}
+#content #thumbs a{
+    display: block;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+    border: 2px solid transparent;
+}
+#content .headline{
+    height: 305px;
+}
+/*  my_save.php Styles  */
+
+#content #Save .table tbody tr td img{
+    width: 70px;
+}
+#content #Save .table tbody tr td input{
+    width: 60px;
+    text-align: right;
+}
+#content #Save .table tbody tr td{
+    vertical-align: super;
+}
+
+
+
+.box .box-footer{
+    background-color: #f7f7f7;
+    margin: 30px -20px 20px;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+.box .box-footer:before,
+.box .box-footer:after{
+    content: "";
+    display: table;
+}
+.box .box-footer:after{
+    clear: both;
+}
+.box .box-header{
+    background-color: #f7f7f7;
+    margin: -20px -20px 20px;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+#content #order-summary table{
+    margin-top: 20px;
+}
+#content #order-summary table td{
+    color: #999999;
+}
+#content #order-summary table tr.total td,
+#content #order-summary table tr.total th{
+    font-size: 18px;
+    color: #555555;
+    font-weight: 700;
+}
+
+/*  For Firefox Only  */
+
+@-moz-document url-prefix(){
+    .form-height-custom{
+        height: auto;
+    }
+}
+
+
+/*  Footer Styles  */
+#footer{
+    background: #FFB319;
+    padding: 20px 0;
+}
+#footer h4{
+    color: #ffffff;
+    text-shadow: #000000;
+    font-size: x-large;
+}
+#footer a{
+    color: #000000;
+    padding: 0;
+    text-decoration: none;
+} 
+#footer p{
+    color: #000;
+}
+#footer a:hover{
+    color: #fffFFF;
+}
+#footer ul{
+    list-style: none;
+    padding-left: 0px;
+    font-size: initial;
+}
+#footer .social{
+    text-align: left;
+}
+#footer .social a{
+    margin: 0px 10px 0px 0px;
+    display: inline-block;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: bottom;
+    background: #FFB319;
+    text-decoration: none;
+}
+#footer .social a:hover{
+    color: #000;
+    background: #FFE194;
+}
+
+/*  Copyright Styles  */
+
+#copyright{
+    background: #FFE194;
+    color: #000;
+    padding: 20px 0px;
+    font-size: 19px;
+}
+#copyright p{
+    margin: 0px;
+}

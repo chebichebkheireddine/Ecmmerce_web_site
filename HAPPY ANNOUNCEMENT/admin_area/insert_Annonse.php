@@ -42,7 +42,7 @@
         <div class="form-group">
             <!-- form-group Begin -->
 
-            <label class="col-md-3 control-label"> Meilleures Annonces  </label>
+            <label class="col-md-3 control-label"> Meilleures Annonces </label>
 
             <div class="col-md-6">
                 <!-- col-md-6 Begin -->
@@ -50,7 +50,7 @@
                 <select name="Annonse_cat" class="form-control">
                     <!-- form-control Begin -->
 
-                    <option> Select a Meilleures Annonces  </option>
+                    <option> Select a Meilleures Annonces </option>
 
                     <?php
 
@@ -149,7 +149,7 @@
                 </select><!-- form-control Finish -->
 
             </div><!-- col-md-6 Finish -->
-            
+
 
         </div><!-- form-group Finish -->
         <div class="form-group">
@@ -289,13 +289,14 @@
 <?php
 
 if (isset($_POST['submit'])) {
-
+    // The id admin we make it 0 for admin because  we have only one admin 
+    $admin_id = 0;
     $Annonse_title = $_POST['Annonse_title'];
     $Annonse_cat = $_POST['Annonse_cat'];
     $cat = $_POST['cat'];
     $pla = $_POST['pla'];
     $Annonse_price = $_POST['Annonse_price'];
-    $Annonse_commine=$_POST['Annonse_commine'];
+    $Annonse_commine = $_POST['Annonse_commine'];
     $Annonse_keywords = $_POST['Annonse_keywords'];
     $Annonse_desc = $_POST['Annonse_des'];
 
@@ -312,8 +313,10 @@ if (isset($_POST['submit'])) {
     move_uploaded_file($temp_name3, "Annons_images/$Annonse_img3");
 
     $insert_Annonse = "insert into annonse 
-    (A_cat_id,cat_id,date,Annonse_title,Annonse_img_1,Annonse_img_2,Annonse_img_3,Annonse_price,Annonse_keywords,Annonse_des,plase_name,Annonse_commine) 
-    values ('$Annonse_cat','$cat',NOW(),'$Annonse_title','$Annonse_img1','$Annonse_img2','$Annonse_img3','$Annonse_price','$Annonse_keywords','$Annonse_desc','$pla','$Annonse_commine')";
+    (A_cat_id,cat_id,date,Annonse_title,Annonse_img_1,Annonse_img_2
+    ,Annonse_img_3,Annonse_price,Annonse_keywords,Annonse_des,plase_name,Annonse_commine,id_person) 
+    values ('$Annonse_cat','$cat',NOW(),'$Annonse_title','$Annonse_img1','$Annonse_img2','$Annonse_img3'
+    ,'$Annonse_price','$Annonse_keywords','$Annonse_desc','$pla','$Annonse_commine','$admin_id')";
 
     $run_annonse = mysqli_query($coon, $insert_Annonse);
 

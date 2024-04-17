@@ -12,9 +12,11 @@ if (isset($_SESSION['custemr_email'])) {
 
     $row_cust = mysqli_fetch_array($run_cust);
 
-    $numcust=$row_cust['custemr_nom'];
+    $numcust = $row_cust['custemr_nom'];
 
-    $phtoimg=$row_cust['custemr_img'];
+    $phtoimg = $row_cust['custemr_img'];
+
+    $cust_id = $row_cust['custemr_id'];
 }
 ?>
 <!DOCTYPE html>
@@ -172,7 +174,7 @@ if (isset($_SESSION['custemr_email'])) {
                     <div class="collapse clearfix" id="search">
                         <!-- collapse clearfix Begin -->
 
-                        <form method="get"  class="navbar-form">
+                        <form method="get" class="navbar-form">
                             <!-- navbar-form Begin -->
 
                             <div class="input-group">

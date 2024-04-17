@@ -47,7 +47,6 @@
                                   
                                   ";
                     }
-
                     ?>
 
                 </select><!-- form-control Finish -->
@@ -238,9 +237,11 @@
             <div class="col-md-6">
                 <!-- col-md-6 Begin -->
 
-                <input name="submit" value="Insert Annonse" type="submit" class="btn btn-primary form-control">
+
+                <input name="submit" value="Insert Annonse" type="submit" class="btn btn-outline form-control">
 
             </div><!-- col-md-6 Finish -->
+
 
         </div><!-- form-group Finish -->
 
@@ -248,7 +249,7 @@
     <?php
 
     if (isset($_POST['submit'])) {
-
+        $id_personne = $cust_id;
         $Annonse_title = $_POST['Annonse_title'];
         $Annonse_cat = $_POST['Annonse_cat'];
         $cat = $_POST['cat'];
@@ -271,15 +272,15 @@
         move_uploaded_file($temp_name3, "Annons_images/$Annonse_img3");
 
         $insert_Annonse = "insert into annonse 
-    (A_cat_id,cat_id,date,Annonse_title,Annonse_img_1,Annonse_img_2,Annonse_img_3,Annonse_price,Annonse_keywords,Annonse_des,plase_name,Annonse_commine) 
-    values ('$Annonse_cat','$cat',NOW(),'$Annonse_title','$Annonse_img1','$Annonse_img2','$Annonse_img3','$Annonse_price','$Annonse_keywords','$Annonse_desc','$pla','$Annonse_commine')";
+    (A_cat_id,cat_id,date,Annonse_title,Annonse_img_1,Annonse_img_2,Annonse_img_3,Annonse_price,Annonse_keywords,Annonse_des,plase_name,Annonse_commine,id_person) 
+    values ('$Annonse_cat','$cat',NOW(),'$Annonse_title','$Annonse_img1','$Annonse_img2','$Annonse_img3','$Annonse_price','$Annonse_keywords','$Annonse_desc','$pla','$Annonse_commine','$id_personne')";
 
         $run_annonse = mysqli_query($coon, $insert_Annonse);
 
         if ($run_annonse) {
 
             echo "<script>alert('Annonse has been inserted sucessfully')</script>";
-            echo "<script>window.open('index.php?insert_Annonse','_self')</script>";
+            echo "<script>window.open('my_account.php','_self')</script>";
         }
     }
 

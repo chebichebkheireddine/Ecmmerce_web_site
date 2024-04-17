@@ -1,4 +1,5 @@
-<div class="panel panel-default sidebar-menu"><!--  panel panel-default sidebar-menu Begin  -->
+<div class="panel panel-default sidebar-menu">
+    <!--  panel panel-default sidebar-menu Begin  -->
 
 
     <?php
@@ -41,9 +42,11 @@
 
 
 
-    <div class="panel-body"><!--  panel-body Begin  -->
+    <div class="panel-body">
+        <!--  panel-body Begin  -->
 
-        <ul class="nav-pills nav-stacked nav"><!--  nav-pills nav-stacked nav Begin  -->
+        <ul class="nav-pills nav-stacked nav">
+            <!--  nav-pills nav-stacked nav Begin  -->
 
             <li class="<?php if (isset($_GET['my_Save'])) {
                             echo "active";
@@ -100,7 +103,7 @@
 
                 <a href="my_account.php?Ajout_pro">
 
-                    <i class="fa fa-trash-o"></i> ajot
+                    <i class="fa fa-plus"></i> Ajouter un produit
 
                 </a>
 
